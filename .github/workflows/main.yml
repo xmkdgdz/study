@@ -1,0 +1,13 @@
+name: main
+
+on:
+  push:
+    branches:
+    - dev
+    
+jobs: 
+  build: 
+  runs-on: ubuntu-lastest
+  steps: 
+  - run: ./test.sh
+  
